@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>orderList</title>
+</head>
+<body>
+    
+    <div id="orderList">
+        <h1> Restaurate Order List</h1>
+    </div>
+
+    <div id="container">
+        <form id="my-form" onsubmit="getSelectedOption(event)">
+            <div>
+                <label for="price">Price</label>
+                <input type="number" id="price">
+            </div>
+            <div>
+                <label for="dish">Dish</label>
+                <input type="text" id="dish">
+            </div>
+            <div>
+                <label for="table">Table</label>
+                <select id="mySelect"> 
+                    
+                    <option value="option1">table 1</option>
+                    <option value="option2">table 2</option>
+                    <option value="option3">table 3</option>
+
+                </select>
+                
+            </div>
+            <button>Add to bill</button>
+        </form>
+    </div>
+
+    <div id="list-container">
+        <h2>Order</h2>
+
+        <div id="table1">
+            <h3>Table 1</h3>
+            <ul id="table_1"></ul>
+        </div>
+        <div id="table2">
+            <h3>Table 2</h3>
+            <ul id="table_2"></ul>
+        </div>
+        <div id="table3">
+            <h3>Table 3</h3>
+            <ul id="table_3"></ul>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
